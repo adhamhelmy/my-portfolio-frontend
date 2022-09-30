@@ -24,7 +24,7 @@ function Login (props) {
   let navigate = useNavigate();
 
   function goToAdminPage()  {
-    if(user.name == "adham" && user.password =="dodo")
+    if(user.name === "adham" && user.password === "dodo")
     {
       navigate("../adminpage", { replace: true });
       //window.location.href = "/adminpage"

@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom"
-import { BrowserHistory } from "history";
-import { Historys } from "history";
 
+import  React  from "react"
+import { render } from "react-dom"
 const Navbar = () => {
+    
+
+    
     return(
         <nav className="navbar navbar-dark bg-primary">
             <a href="/" className="navbar-brand">
@@ -22,6 +25,7 @@ const Navbar = () => {
             </ul>
         </nav>
     )
+    
     
   }
   export default Navbar;
