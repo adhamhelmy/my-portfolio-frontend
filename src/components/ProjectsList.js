@@ -37,7 +37,7 @@ const ProjectsList = props => {
       
         {
             projects.length > 0 ?
-            projects.map((project) => {
+            projects.reverse().map((project) => {
             return(
             <div className="card" key={project._id} style={{width: 450, backgroundColor: "#282c34", margin: 10}}>
                     <div className="card-body">
