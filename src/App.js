@@ -9,6 +9,7 @@ import ProjectData from './Services/Project';
 import React from 'react';
 import AdminPage from './components/AdminPage';
 import AddProject from './components/AddProject'
+import WeatherApp from './components/WeatherApp';
 
 //import addproject from 
 
@@ -18,13 +19,15 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Test/>}/>  
         
-        <Route path="/#/projects" element={<ProjectsList />}  />
+        <Route path="/projects" element={<ProjectsList />}  />
 
-        <Route path="/#/login" element={<Login />} />    
+        <Route path="/login" element={<Login />} />    
 
-        <Route path="/#/adminpage" element={<AdminPage />} />
+        <Route path="/adminpage" element={<AdminPage />} />
 
-        <Route path="/#/addproject" element={<AddProject />} />
+        <Route path="/addproject" element={<AddProject />} />
+
+        <Route path="/weatherapp" element={<WeatherApp />} />
       </Routes>
     </BrowserRouter>
   );

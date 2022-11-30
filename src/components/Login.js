@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Navbar from './Navbar.js';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 
 function Login (props) {
@@ -27,10 +27,10 @@ function Login (props) {
     if(user.name === "adham" && user.password === "dodo")
     {
       navigate("../adminpage", { replace: true });
-      //window.location.href = "/adminpage"
       console.log("right credentials")
     }
-    else{
+    else
+    {
       console.log("wrong credentials")
     }
 
@@ -43,12 +43,26 @@ function Login (props) {
         <div className="App-header" >
             <div className="form-group">
                 <label htmlFor="InputUsername">Username</label>
-                <input type="username" className="form-control" id="name" name="name"  value={user.name} placeholder="Enter username" onChange={handleInputChange}></input>
+                <input 
+                  type="username" 
+                  className="form-control" 
+                  id="name" name="name"  
+                  value={user.name} 
+                  placeholder="Enter username" 
+                  onChange={handleInputChange}>
+                </input>
                 
             </div>
             <div className="form-group">
                 <label htmlFor="InputPassword1">Password</label>
-                <input type="password" className="form-control" id="password" name="password" value={user.password} placeholder="Password" onChange={handleInputChange}></input>
+                <input 
+                  type="password" 
+                  className="form-control" 
+                  id="password" name="password" 
+                  value={user.password} 
+                  placeholder="Password" 
+                  onChange={handleInputChange}>
+                </input>
             </div>
   
             <button  className="btn btn-primary" type="reset" onClick={goToAdminPage}>Submit</button>
