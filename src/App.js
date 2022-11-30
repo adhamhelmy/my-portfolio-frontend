@@ -1,11 +1,10 @@
 
 import './App.css';
-import {Routes, Route, Link, BrowserRouter} from "react-router-dom"
+import {Routes, Route, BrowserRouter} from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
 import ProjectsList from './components/ProjectsList';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
-import ProjectData from './Services/Project';
 import React from 'react';
 import AdminPage from './components/AdminPage';
 import AddProject from './components/AddProject'
@@ -13,25 +12,25 @@ import WeatherApp from './components/WeatherApp';
 
 //import addproject from 
 
-const App = () => {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Test/>}/>  
+// const App = () => {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<Test/>}/>  
         
-        <Route path="/projects" element={<ProjectsList />}  />
+//         <Route path="/projects" element={<ProjectsList />}  />
 
-        <Route path="/login" element={<Login />} />    
+//         <Route path="/login" element={<Login />} />    
 
-        <Route path="/adminpage" element={<AdminPage />} />
+//         <Route path="/adminpage" element={<AdminPage />} />
 
-        <Route path="/addproject" element={<AddProject />} />
+//         <Route path="/addproject" element={<AddProject />} />
 
-        <Route path="/weatherapp" element={<WeatherApp />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
+//         <Route path="/weatherapp" element={<WeatherApp />} />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
 
 const Test = () => {
   return (

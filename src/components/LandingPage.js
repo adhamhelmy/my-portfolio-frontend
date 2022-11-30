@@ -26,25 +26,25 @@ function LandingPage(props) {
     });
     
     
-    function addNavigationMenu()
-    {
-        for(let i = 1; i <= secNum; i++)
-        {
-          addNavElement(i);
-        }
-    }
+    // function addNavigationMenu()
+    // {
+    //     for(let i = 1; i <= secNum; i++)
+    //     {
+    //       addNavElement(i);
+    //     }
+    // }
 
-    function addNavElement(navNum){
-        let navBar = document.getElementById('navbar__list');
-        let nav = document.createElement("li");
-        nav.setAttribute('id','nav' + navNum);
-        nav.setAttribute('data-nav',"data-nav" + navNum);
-        nav.appendChild(document.createTextNode("section " + navNum));
-        navBar.appendChild(nav);
-        document.getElementById('nav' + navNum).addEventListener('click', function () {
-          document.getElementById('section' + navNum).scrollIntoView({behavior:"smooth"});
-        });
-    }
+    // function addNavElement(navNum){
+    //     let navBar = document.getElementById('navbar__list');
+    //     let nav = document.createElement("li");
+    //     nav.setAttribute('id','nav' + navNum);
+    //     nav.setAttribute('data-nav',"data-nav" + navNum);
+    //     nav.appendChild(document.createTextNode("section " + navNum));
+    //     navBar.appendChild(nav);
+    //     document.getElementById('nav' + navNum).addEventListener('click', function () {
+    //       document.getElementById('section' + navNum).scrollIntoView({behavior:"smooth"});
+    //     });
+    // }
     //addNavigationMenu()
     function scroll(navnum)
     {

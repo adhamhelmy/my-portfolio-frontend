@@ -15,7 +15,7 @@ const AdminPage = props => {
   useEffect(() => {
     retrieveProjects();  
   }, []);
-  const [value,setValue] = useState();
+  const [setValue] = useState();
   const retrieveProjects = () => {
     ProjectData.getAll()
       .then(response => {

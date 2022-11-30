@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import './App.css';
 import  React  from "react"
 import pdf from './adham-helmy.pdf'
-import { render } from "react-dom"
+
 const Navbar = () => {
     
 
