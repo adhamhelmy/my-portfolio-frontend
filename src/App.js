@@ -1,14 +1,11 @@
 
 import './App.css';
-import {Routes, Route, BrowserRouter} from "react-router-dom"
+
 import "bootstrap/dist/css/bootstrap.min.css"
-import ProjectsList from './components/ProjectsList';
+
 import Navbar from './components/Navbar';
-import Login from './components/Login';
+
 import React from 'react';
-import AdminPage from './components/AdminPage';
-import AddProject from './components/AddProject'
-import WeatherApp from './components/WeatherApp';
 
 //import addproject from 
 

@@ -56,7 +56,7 @@ const AdminPage = props => {
                         <h5 className="card-title">{project.name}</h5>
                         <p className="card-text">{project.description}</p>
                         <p className="card-text">{project.id}</p>
-                        <a href={project.url} target="_blank" className="btn btn-primary" style={{margin: 5}}>Open</a>
+                        <a href={project.url}  className="btn btn-primary" style={{margin: 5}}>Open</a>
                         
                         <button  className="btn btn-danger" onClick={() => deletePost(project)} style={{backgroundColor: 'red', margin: 5}}>Delete</button>
                     </div>

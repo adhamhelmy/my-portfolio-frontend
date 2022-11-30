@@ -43,7 +43,7 @@ const ProjectsList = props => {
                     <div className="card-body">
                         <h3 className="card-title">{project.name}</h3>
                         <p className="card-text">{project.description}</p>
-                        <a href={project.url} target="_blank" className="btn btn-primary">Open</a>
+                        <a href={project.url}  className="btn btn-primary">Open</a>
                     </div>
             </div>
             )     
